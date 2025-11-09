@@ -4,12 +4,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 import { ArrowLeftRight } from "lucide-react";
 
-import beforeTableau from "@/assets/gallery/before-tableau-1.jpg";
-import afterTableau from "@/assets/gallery/after-tableau-1.jpg";
-import beforeEclairage from "@/assets/gallery/before-eclairage-1.jpg";
-import afterEclairage from "@/assets/gallery/after-eclairage-1.jpg";
-import beforePrises from "@/assets/gallery/before-prises-1.jpg";
-import afterPrises from "@/assets/gallery/after-prises-1.jpg";
+import beforeTableau1 from "@/assets/gallery/before-tableau-1.jpg";
+import afterTableau1 from "@/assets/gallery/after-tableau-1.jpg";
+import beforeTableau2 from "@/assets/gallery/before-tableau-2.jpg";
+import afterTableau2 from "@/assets/gallery/after-tableau-2.jpg";
+import beforeEclairage1 from "@/assets/gallery/before-eclairage-1.jpg";
+import afterEclairage1 from "@/assets/gallery/after-eclairage-1.jpg";
+import beforeEclairage2 from "@/assets/gallery/before-eclairage-2.jpg";
+import afterEclairage2 from "@/assets/gallery/after-eclairage-2.jpg";
+import beforePrises1 from "@/assets/gallery/before-prises-1.jpg";
+import afterPrises1 from "@/assets/gallery/after-prises-1.jpg";
 
 interface GalleryItem {
   id: number;
@@ -24,30 +28,48 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    title: "Rénovation tableau électrique",
+    title: "Rénovation tableau électrique complet",
     category: "electricite",
     location: "Athis-Mons",
-    beforeImage: beforeTableau,
-    afterImage: afterTableau,
-    description: "Remplacement complet d'un tableau électrique vétuste par une installation aux normes NF C 15-100."
+    beforeImage: beforeTableau2,
+    afterImage: afterTableau2,
+    description: "Rénovation complète d'un tableau électrique avec mise aux normes, installation de nouveaux disjoncteurs et organisation professionnelle des circuits."
   },
   {
     id: 2,
-    title: "Installation éclairage LED",
+    title: "Installation luminaire design moderne",
     category: "eclairage",
-    location: "Juvisy-sur-Orge",
-    beforeImage: beforeEclairage,
-    afterImage: afterEclairage,
-    description: "Modernisation de l'éclairage avec spots LED encastrés pour un rendu contemporain et économique."
+    location: "Essonne",
+    beforeImage: beforeEclairage2,
+    afterImage: afterEclairage2,
+    description: "Installation professionnelle d'un luminaire moderne avec câblage électrique et finitions impeccables."
   },
   {
     id: 3,
-    title: "Mise aux normes prises et interrupteurs",
+    title: "Mise aux normes tableau électrique",
     category: "electricite",
-    location: "Savigny-sur-Orge",
-    beforeImage: beforePrises,
-    afterImage: afterPrises,
-    description: "Remplacement de l'appareillage électrique pour un résultat moderne et sécurisé."
+    location: "Athis-Mons",
+    beforeImage: beforeTableau1,
+    afterImage: afterTableau1,
+    description: "Rénovation et mise en conformité d'un ancien tableau électrique avec installation de protections modernes."
+  },
+  {
+    id: 4,
+    title: "Installation éclairage LED design",
+    category: "eclairage",
+    location: "Essonne",
+    beforeImage: beforeEclairage1,
+    afterImage: afterEclairage1,
+    description: "Installation complète d'un système d'éclairage LED moderne avec spots encastrés et création d'une ambiance chaleureuse."
+  },
+  {
+    id: 5,
+    title: "Ajout de prises électriques",
+    category: "electricite",
+    location: "Athis-Mons",
+    beforeImage: beforePrises1,
+    afterImage: afterPrises1,
+    description: "Installation de nouvelles prises murales avec câblage encastré et finitions soignées."
   }
 ];
 

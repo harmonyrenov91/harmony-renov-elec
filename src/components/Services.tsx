@@ -6,7 +6,8 @@ import {
   Smartphone, 
   Shield, 
   Car,
-  Wrench
+  Wrench,
+  Clock
 } from "lucide-react";
 
 const services = [
@@ -51,6 +52,12 @@ const services = [
     title: "Travaux d'intérieur",
     description: "Petits travaux de finition, aménagements, réparations et rénovations électriques complémentaires.",
     color: "text-primary-light"
+  },
+  {
+    icon: Clock,
+    title: "Dépannage 24/24 7/7",
+    description: "Intervention d'urgence rapide pour tous vos problèmes électriques. Service disponible 24h/24 et 7j/7 pour vous dépanner à tout moment.",
+    color: "text-primary"
   }
 ];
 

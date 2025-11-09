@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, Mail } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo-harmony-renov.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,13 +18,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">HR</span>
-            </div>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Harmony Renov" className="h-14 w-auto" />
             <div>
-              <h2 className="font-bold text-lg text-foreground">Harmony Renov</h2>
-              <p className="text-xs text-muted-foreground">Électricien Athis-Mons</p>
+              <h2 className="font-bold text-xl text-foreground tracking-tight">HARMONY RENOV</h2>
+              <p className="text-xs text-primary font-medium tracking-wide">ÉLECTRICITÉ & TRAVAUX D'INTÉRIEUR</p>
             </div>
           </div>
 
