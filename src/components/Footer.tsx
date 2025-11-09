@@ -34,6 +34,7 @@ const Footer = () => {
               <li><a href="#services" className="hover:text-primary transition-smooth">Chauffage & VMC</a></li>
               <li><a href="#services" className="hover:text-primary transition-smooth">Domotique</a></li>
               <li><a href="#services" className="hover:text-primary transition-smooth">Bornes IRVE</a></li>
+              <li><a href="#realisations" className="hover:text-primary transition-smooth">Nos réalisations</a></li>
             </ul>
           </div>
 
