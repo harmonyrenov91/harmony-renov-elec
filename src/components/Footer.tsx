@@ -1,10 +1,7 @@
 import { Separator } from "@/components/ui/separator";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
@@ -12,7 +9,7 @@ const Footer = () => {
               <img src="/src/assets/logo-harmony-renov.png" alt="Harmony Renov" className="h-12" />
               <div>
                 <h3 className="font-bold text-lg text-foreground">Harmony Renov</h3>
-                <p className="text-sm text-muted-foreground">Électricien Paris & Ile-de-France</p>
+                <p className="text-muted-foreground text-xs">ÉLECTRICITÉ &amp; TRAVAUX D'INTÉRIEUR</p>
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mb-4">
@@ -72,8 +69,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
