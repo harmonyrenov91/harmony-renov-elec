@@ -14,6 +14,8 @@ import beforeEclairage2 from "@/assets/gallery/before-eclairage-2.jpg";
 import afterEclairage2 from "@/assets/gallery/after-eclairage-2.jpg";
 import beforePrises1 from "@/assets/gallery/before-prises-1.jpg";
 import afterPrises1 from "@/assets/gallery/after-prises-1.jpg";
+import beforeSalleBain1 from "@/assets/gallery/before-salle-bain-1.jpg";
+import afterSalleBain1 from "@/assets/gallery/after-salle-bain-1.jpg";
 
 interface GalleryItem {
   id: number;
@@ -70,6 +72,15 @@ const galleryItems: GalleryItem[] = [
     beforeImage: beforePrises1,
     afterImage: afterPrises1,
     description: "Installation de nouvelles prises murales avec câblage encastré et finitions soignées."
+  },
+  {
+    id: 6,
+    title: "Rénovation salle de bain complète au goût du jour",
+    category: "renovation",
+    location: "Essonne",
+    beforeImage: beforeSalleBain1,
+    afterImage: afterSalleBain1,
+    description: "Transformation complète d'une salle de bain avec installation électrique moderne, éclairage LED intégré et finitions haut de gamme."
   }
 ];
 
@@ -113,7 +124,7 @@ const ComparisonCard = ({ item }: { item: GalleryItem }) => {
             📍 {item.location}
           </span>
           <Badge variant="outline" className="text-xs">
-            {item.category === 'electricite' ? 'Électricité' : 'Éclairage'}
+            {item.category === 'electricite' ? 'Électricité' : item.category === 'eclairage' ? 'Éclairage' : 'Rénovation'}
           </Badge>
         </div>
       </CardContent>
@@ -146,10 +157,11 @@ const Gallery = () => {
         </div>
 
         <Tabs defaultValue="tous" className="mb-8" onValueChange={setActiveCategory}>
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-4">
             <TabsTrigger value="tous">Tous</TabsTrigger>
             <TabsTrigger value="electricite">Électricité</TabsTrigger>
             <TabsTrigger value="eclairage">Éclairage</TabsTrigger>
+            <TabsTrigger value="renovation">Rénovation</TabsTrigger>
           </TabsList>
 
           <TabsContent value={activeCategory} className="mt-8">
