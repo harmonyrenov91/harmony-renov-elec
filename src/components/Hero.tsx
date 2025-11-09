@@ -2,17 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-electrician.jpg";
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     }
   };
-
-  return (
-    <section id="accueil" className="relative min-h-screen flex items-center bg-gradient-hero pt-20">
+  return <section id="accueil" className="relative min-h-screen flex items-center bg-gradient-hero pt-20">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"></div>
@@ -30,8 +30,8 @@ const Hero = () => {
               </Badge>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-              Électricien à Athis-Mons <span className="text-primary">(91200)</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold text-neutral-600">
+              Électricien à Athis-Mons <span className="text-primary"></span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
@@ -73,16 +73,10 @@ const Hero = () => {
 
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-primary opacity-10 blur-2xl rounded-3xl"></div>
-            <img 
-              src={heroImage} 
-              alt="Électricien professionnel Harmony Renov à Athis-Mons travaillant sur une installation électrique moderne"
-              className="relative rounded-2xl shadow-strong w-full h-auto object-cover"
-            />
+            <img src={heroImage} alt="Électricien professionnel Harmony Renov à Athis-Mons travaillant sur une installation électrique moderne" className="relative rounded-2xl shadow-strong w-full h-auto object-cover" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
