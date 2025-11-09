@@ -213,6 +213,12 @@ const AthisMonsPage = () => {
                     <Phone className="mr-2" size={20} />
                     Contactez votre électricien à Athis-Mons
                   </Button>
+                  <div className="mt-4">
+                    <a href="tel:+33780919488" className="text-2xl font-bold text-primary hover:text-primary/80 transition-smooth">
+                      07 80 91 94 88
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Appelez directement</p>
+                  </div>
                 </div>
               </div>
             </div>
