@@ -60,7 +60,7 @@ const Testimonials = () => {
               <CardContent className="pt-6 relative z-10">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={18} className="fill-secondary text-secondary" />
+                    <Star key={i} size={18} className="fill-star text-star" />
                   ))}
                 </div>
                 <p className="text-foreground/90 mb-6 leading-relaxed italic">
@@ -87,7 +87,7 @@ const Testimonials = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:text-primary-light transition-smooth font-medium"
           >
-            <Star size={18} className="fill-secondary text-secondary" />
+            <Star size={18} className="fill-star text-star" />
             Lire d'autres avis sur Google
           </a>
         </div>
