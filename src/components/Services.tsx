@@ -9,55 +9,64 @@ import {
   Wrench,
   Clock
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Zap,
     title: "Électricité générale",
     description: "Installation complète, rénovation, mise aux normes, tableaux électriques, circuits prises et éclairages.",
-    color: "text-primary"
+    color: "text-primary",
+    link: "/services/electricite"
   },
   {
     icon: Lightbulb,
     title: "Éclairage intérieur & extérieur",
     description: "Création d'ambiances lumineuses, éclairage LED, spots encastrés, luminaires, DCL, projecteurs extérieurs.",
-    color: "text-secondary"
+    color: "text-secondary",
+    link: "/services/eclairage"
   },
   {
     icon: Thermometer,
     title: "Chauffage & ventilation",
     description: "Pose de radiateurs électriques, sèche-serviettes, VMC simple ou double flux, thermostats programmables.",
-    color: "text-primary-light"
+    color: "text-primary-light",
+    link: "/services/chauffage-ventilation"
   },
   {
     icon: Smartphone,
     title: "Domotique & confort connecté",
     description: "Pilotage à distance de votre éclairage, chauffage et volets. Installation de solutions connectées simples et efficaces.",
-    color: "text-secondary-light"
+    color: "text-secondary-light",
+    link: "/services/domotique"
   },
   {
     icon: Shield,
     title: "Sécurité & courants faibles",
     description: "Alarmes, interphones, vidéophones, vidéosurveillance, réseaux informatiques et câblage RJ45.",
-    color: "text-primary"
+    color: "text-primary",
+    link: "/services/securite"
   },
   {
     icon: Car,
     title: "Bornes de recharge IRVE",
     description: "Installation de bornes de recharge pour véhicules électriques, diagnostic et mise en conformité.",
-    color: "text-secondary"
+    color: "text-secondary",
+    link: "/services/bornes-irve"
   },
   {
     icon: Wrench,
     title: "Travaux d'intérieur",
     description: "Petits travaux de finition, aménagements, réparations et rénovations électriques complémentaires.",
-    color: "text-primary-light"
+    color: "text-primary-light",
+    link: "/services/travaux-interieur"
   },
   {
     icon: Clock,
     title: "Dépannage 24/24 7/7",
     description: "Intervention d'urgence rapide pour tous vos problèmes électriques. Service disponible 24h/24 et 7j/7 pour vous dépanner à tout moment.",
-    color: "text-primary"
+    color: "text-primary",
+    link: "/services/depannage-247"
   }
 ];
 
@@ -77,22 +86,23 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card 
-              key={index}
-              className="border-border hover:shadow-medium transition-smooth hover:scale-[1.02] cursor-pointer bg-card"
-            >
-              <CardHeader>
-                <div className={`w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 shadow-soft`}>
-                  <service.icon className="text-primary-foreground" size={28} />
-                </div>
-                <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base text-muted-foreground leading-relaxed">
-                  {service.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <Link key={index} to={service.link}>
+              <Card 
+                className="border-border hover:shadow-medium transition-smooth hover:scale-[1.02] cursor-pointer bg-card h-full"
+              >
+                <CardHeader>
+                  <div className={`w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 shadow-soft`}>
+                    <service.icon className="text-primary-foreground" size={28} />
+                  </div>
+                  <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 
