@@ -4,40 +4,34 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Claire B.",
-    city: "Juvisy-sur-Orge",
+    name: "CHT Connan",
+    city: "Client vérifié",
     rating: 5,
-    text: "Travail impeccable, propre et rapide. Très professionnel, je recommande !"
+    text: "Montasser a fait un excellent travail. Il s'est parfaitement adapté aux imprévus et a réalisé l'installation avec professionnalisme, sourire et gentillesse. Je recommande vivement"
   },
   {
-    name: "Marc D.",
-    city: "Athis-Mons",
+    name: "Carole B.",
+    city: "Client vérifié",
     rating: 5,
-    text: "Intervention rapide pour un tableau électrique. Résultat parfait."
+    text: "Excellente prestation : remplacement du tableau électrique et installation de nouvelles prises réalisés avec beaucoup de soin. Travail rapide, efficace, et très professionnel. Je recommande vivement."
   },
   {
-    name: "Nadia F.",
-    city: "Viry-Châtillon",
+    name: "Justine Essol",
+    city: "Client vérifié",
     rating: 5,
-    text: "Installation de radiateurs électriques et VMC. Artisan sérieux et à l'écoute."
+    text: "Nous avions besoin de quelqu'un pour réparer les spots de notre salle de bain. Nous avons fait appel à Harmony Renov et nous ne regrettons pas ! Il est ponctuel, très gentil, à l'écoute et avec des conseils très pertinents. Intervention un samedi et notre problème est désormais derrière nous. Merci beaucoup pour ce travail :)"
   },
   {
-    name: "Karim L.",
-    city: "Morangis",
+    name: "Thomas Cannariato",
+    city: "Client vérifié",
     rating: 5,
-    text: "Excellent électricien, ponctuel et efficace. Je referai appel à lui sans hésiter."
+    text: "Le différentiel qui lâche un dimanche après-midi. 2h30 plus tard ils étaient en train d'intervenir chez moi. What else ?"
   },
   {
-    name: "Thomas R.",
-    city: "Draveil",
+    name: "Isma Larbes",
+    city: "Client vérifié",
     rating: 5,
-    text: "Très satisfait de la rénovation complète de mon installation. Bon rapport qualité/prix."
-  },
-  {
-    name: "Sophie M.",
-    city: "Savigny-sur-Orge",
-    rating: 5,
-    text: "Installation d'une borne de recharge impeccable. Professionnel et de bon conseil."
+    text: "Nous avons fait appel à ces artisans pour refaire toute l'électricité d'un T2. Devis rapide. Prix imbattable. Rapidité d'exécution. Travail soigné et propre et ils sont gentils… Nous les recommandons sans aucune hésitation, et faisons déjà appel à eux pour un autre chantier."
   }
 ];
 
