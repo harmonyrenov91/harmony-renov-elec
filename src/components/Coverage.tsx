@@ -1,17 +1,18 @@
 import { Badge } from "@/components/ui/badge";
 import { MapPin, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const cities = [
-  "Athis-Mons",
-  "Juvisy-sur-Orge",
-  "Savigny-sur-Orge",
-  "Paray-Vieille-Poste",
-  "Morangis",
-  "Viry-Châtillon",
-  "Draveil",
-  "Vigneux-sur-Seine",
-  "Ablon-sur-Seine",
-  "Villeneuve-le-Roi"
+  { name: "Athis-Mons", link: "/villes/athis-mons" },
+  { name: "Juvisy-sur-Orge", link: "/villes/juvisy-sur-orge" },
+  { name: "Savigny-sur-Orge", link: "/villes/savigny-sur-orge" },
+  { name: "Paray-Vieille-Poste", link: "/villes/paray-vieille-poste" },
+  { name: "Morangis", link: "/villes/morangis" },
+  { name: "Viry-Châtillon", link: "/villes/viry-chatillon" },
+  { name: "Draveil", link: "/villes/draveil" },
+  { name: "Vigneux-sur-Seine", link: "/villes/vigneux-sur-seine" },
+  { name: "Ablon-sur-Seine", link: "/villes/ablon-sur-seine" },
+  { name: "Villeneuve-le-Roi", link: "/villes/villeneuve-le-roi" }
 ];
 
 const Coverage = () => {
@@ -42,10 +43,14 @@ const Coverage = () => {
               
               <div className="grid grid-cols-2 gap-3">
                 {cities.map((city, index) => (
-                  <div key={index} className="flex items-center gap-2 text-foreground/80">
+                  <Link 
+                    key={index} 
+                    to={city.link}
+                    className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-smooth"
+                  >
                     <CheckCircle2 className="text-secondary shrink-0" size={18} />
-                    <span>{city}</span>
-                  </div>
+                    <span>{city.name}</span>
+                  </Link>
                 ))}
               </div>
 
