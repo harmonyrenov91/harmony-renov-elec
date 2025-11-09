@@ -82,7 +82,7 @@ const Testimonials = () => {
 
         <div className="text-center mt-10">
           <a 
-            href="https://www.google.com/search?q=harmony+renov+athis+mons" 
+            href="https://www.google.com/search?sca_esv=64f570c313726488&rlz=1C1FKPE_enFR1139FR1139&tbm=lcl&q=Harmony+Renov+-+%C3%89lectricit%C3%A9+%26+R%C3%A9novation+d%27int%C3%A9rieur+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NrY0NzQwNzYwMTAxMjM1NbAw3sDI-IrR1iOxKDc_r1IhKDUvv0xBV-FwZ05qcklRZnJmyeGVCmoKQYdXAiUSSzLz8xRS1DPzgKJFmamlRQqOZZnFi1gp0w8Azt0iX5oAAAA&rldimm=3397107304042655083&hl=fr-FR&sa=X&ved=2ahUKEwiZtIXx7uWQAxWqNfsDHUBQNgoQ9fQKegQINRAF&biw=1920&bih=1031&dpr=1#lkt=LocalPoiReviews" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:text-primary-light transition-smooth font-medium"
