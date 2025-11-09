@@ -60,8 +60,8 @@ const ViryChatillonPage = () => {
                     Demander un devis gratuit
                   </Button>
                   <div className="mt-4">
-                    <a href="tel:+33780919488" className="text-2xl font-bold text-primary hover:text-primary/80 transition-smooth">
-                      07 80 91 94 88
+                    <a href="tel:+33764399106" className="text-2xl font-bold text-primary hover:text-primary/80 transition-smooth">
+                      07 64 39 91 06
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">Appelez directement</p>
                   </div>
