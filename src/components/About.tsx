@@ -21,7 +21,7 @@ const highlights = [
   {
     icon: Clock,
     title: "Réactif",
-    description: "Intervention rapide en Essonne"
+    description: "Intervention rapide Paris & IDF"
   }
 ];
 
@@ -35,7 +35,7 @@ const About = () => {
               À propos
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Votre électricien de confiance à Athis-Mons et dans l'Essonne
+              Votre électricien de confiance à Paris et en Ile-de-France
             </h2>
           </div>
 

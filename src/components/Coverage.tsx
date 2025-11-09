@@ -25,11 +25,11 @@ const Coverage = () => {
               Zone d'intervention
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Nos interventions en Essonne (91)
+              Nos interventions à Paris et en Ile-de-France
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Basée à Athis-Mons (91200), Harmony Renov intervient dans tout le département de l'Essonne 
-              et les communes voisines pour vos installations électriques, dépannages urgents, 
+              Basée à Athis-Mons (91200), Harmony Renov intervient à Paris, dans tout le département de l'Essonne 
+              et l'ensemble de l'Ile-de-France pour vos installations électriques, dépannages urgents, 
               rénovations complètes ou mises en conformité.
             </p>
           </div>

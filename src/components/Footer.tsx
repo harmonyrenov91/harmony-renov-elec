@@ -9,17 +9,15 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">HR</span>
-              </div>
+              <img src="/src/assets/logo-harmony-renov.png" alt="Harmony Renov" className="h-12" />
               <div>
                 <h3 className="font-bold text-lg text-foreground">Harmony Renov</h3>
-                <p className="text-sm text-muted-foreground">Électricien Athis-Mons</p>
+                <p className="text-sm text-muted-foreground">Électricien Paris & Ile-de-France</p>
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Votre partenaire de confiance pour tous vos travaux d'électricité et de rénovation intérieure 
-              en Essonne. Plus de 10 ans d'expérience au service de votre confort et de votre sécurité.
+              à Paris, en Essonne et dans toute l'Ile-de-France. Plus de 10 ans d'expérience au service de votre confort et de votre sécurité.
             </p>
             <p className="text-sm text-muted-foreground">
               Certifié • Assuré • Interventions rapides

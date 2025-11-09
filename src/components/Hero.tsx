@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold text-neutral-600">
-              Électricien à Athis-Mons <span className="text-primary"></span>
+              Électricien Paris & Ile-de-France <span className="text-primary"></span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
@@ -50,7 +50,7 @@ const Hero = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                <span className="text-foreground/80">Intervention rapide en Essonne (91)</span>
+                <span className="text-foreground/80">Intervention rapide à Paris et en Ile-de-France</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
