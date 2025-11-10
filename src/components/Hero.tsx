@@ -63,9 +63,9 @@ const Hero = () => {
                 Demandez votre devis gratuit
               </Button>
               <Button variant="outline" size="lg" asChild className="text-base">
-                <a href="tel:+33" className="flex items-center gap-2">
+                <a href="tel:+33764399106" className="flex items-center gap-2">
                   <Phone size={18} />
-                  Contactez-nous
+                  07 64 39 91 06
                 </a>
               </Button>
             </div>

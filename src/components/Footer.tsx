@@ -1,17 +1,19 @@
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4 hover:opacity-80 transition-smooth w-fit">
               <img src="/src/assets/logo-harmony-renov.png" alt="Harmony Renov" className="h-12" />
               <div>
                 <h3 className="font-bold text-lg text-foreground">Harmony Renov</h3>
                 <p className="text-muted-foreground text-xs">ÉLECTRICITÉ &amp; TRAVAUX D'INTÉRIEUR</p>
               </div>
-            </div>
+            </Link>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Votre partenaire de confiance pour tous vos travaux d'électricité et de rénovation intérieure 
               à Paris, en Essonne et dans toute l'Ile-de-France. Plus de 10 ans d'expérience au service de votre confort et de votre sécurité.

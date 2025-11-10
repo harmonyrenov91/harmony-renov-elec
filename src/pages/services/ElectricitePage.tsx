@@ -3,11 +3,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Zap, Shield, Clock, Award } from "lucide-react";
+import { CheckCircle2, Zap, Shield, Clock, Award, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const ElectricitePage = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const scrollToContact = () => {
     navigate("/");
@@ -223,8 +228,11 @@ const ElectricitePage = () => {
                   <Button onClick={scrollToContact} variant="cta" size="lg">
                     Demander un devis
                   </Button>
-                  <Button onClick={() => navigate("/")} variant="outline" size="lg">
-                    Retour à l'accueil
+                  <Button variant="outline" size="lg" asChild>
+                    <a href="tel:+33764399106" className="flex items-center gap-2">
+                      <Phone size={18} />
+                      Nous contacter
+                    </a>
                   </Button>
                 </div>
               </div>

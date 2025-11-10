@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import logo from "@/assets/logo-harmony-renov.png";
 
 const Header = () => {
@@ -27,13 +27,13 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-smooth">
             <img src={logo} alt="Harmony Renov" className="h-14 w-auto" />
             <div>
               <h2 className="font-bold text-xl text-foreground tracking-tight">HARMONY RENOV</h2>
               <p className="text-xs text-primary font-medium tracking-wide">ÉLECTRICITÉ & TRAVAUX D'INTÉRIEUR</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">

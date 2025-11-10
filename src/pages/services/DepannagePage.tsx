@@ -5,9 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Clock, Phone, AlertCircle, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const DepannagePage = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const scrollToContact = () => {
     navigate("/");
@@ -219,12 +224,17 @@ const DepannagePage = () => {
                   Ne prenez aucun risque. Appelez-nous immédiatement pour une intervention d'urgence partout en Essonne.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button onClick={scrollToContact} variant="cta" size="lg" className="text-lg">
-                    <Phone className="mr-2" size={20} />
-                    07 64 39 91 06
+                  <Button variant="cta" size="lg" className="text-lg" asChild>
+                    <a href="tel:+33764399106" className="flex items-center gap-2">
+                      <Phone size={20} />
+                      07 64 39 91 06
+                    </a>
                   </Button>
-                  <Button onClick={() => navigate("/")} variant="outline" size="lg">
-                    Retour à l'accueil
+                  <Button variant="outline" size="lg" asChild>
+                    <a href="tel:+33764399106" className="flex items-center gap-2">
+                      <Phone size={18} />
+                      Nous contacter
+                    </a>
                   </Button>
                 </div>
               </div>
